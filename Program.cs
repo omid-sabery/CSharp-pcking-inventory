@@ -48,10 +48,7 @@ namespace Inheritance
                         Console.WriteLine($"- {item}");
                 }
 
-                Console.WriteLine($"\nSummary:");
-                Console.WriteLine($"Items: {pack.ItemCount}/{pack.Capacity}");
-                Console.WriteLine($"Weight: {pack.CurrentWeight}/{pack.MaxWeight}");
-                Console.WriteLine($"Volume: {pack.CurrentVolume}/{pack.MaxVolume}");
+            Console.WriteLine(pack);
             }
         }
     }

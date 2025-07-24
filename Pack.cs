@@ -48,5 +48,15 @@ namespace Inheritance
             _currentVolume += item.Volume;
             return true;
         }
+        public override string ToString()
+        {
+            string packString = "Pack containing ";
+            foreach (var item in Items)
+            {
+                if (item != null)
+                  packString += item.ToString() + " ";
+            }
+            return  packString;
+        }
     }
 }
